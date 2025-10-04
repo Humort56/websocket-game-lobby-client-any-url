@@ -1,7 +1,7 @@
 {
   "name": "websocket-game-lobby-client-any-url",
   "description": "Simple API for building games using WebSockets.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "node": ">=20.0"
   },

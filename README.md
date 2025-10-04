@@ -46,6 +46,7 @@ const gameLobby = new WebSocketGameLobbyClient({
 
 | Name                    | Description                                                                                                      | Default            |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------ |
+| `url`                   | URL to connect to WebSocket  server.                                                                             | `window.location.hostname` |
 | `port`                  | Port to connect to WebSocket server.                                                                             | `80`               |
 | `options`               | Options to send to [reconnecting-websocket](https://github.com/pladaria/reconnecting-websocket)                  | `{maxRetries: 10}` |
 | `gameId`                | Game ID used to connect to the [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby) server.   | `null`             |
