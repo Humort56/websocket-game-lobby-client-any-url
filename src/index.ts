@@ -16,6 +16,7 @@ export class WebSocketGameLobbyClient {
     keepAliveInterval: number;
 
     constructor({
+        url,
         port = 80,
         options = {
             maxRetries: 10
@@ -25,6 +26,7 @@ export class WebSocketGameLobbyClient {
         playerId,
         keepAliveMilliseconds = 30000
     }: {
+        url?: string;
         port?: number;
         options?: Options;
         gameId?: string;
@@ -34,7 +36,7 @@ export class WebSocketGameLobbyClient {
     }) {
         this.rws = new ReconnectingWebSocket(
             `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${
-                window.location.hostname
+                url || window.location.hostname
             }${port && port !== 80 ? `:${port}` : ''}?${qs.stringify(
                 {
                     gameId: gameId || null,

@@ -1,7 +1,7 @@
 {
-  "name": "websocket-game-lobby-client",
+  "name": "websocket-game-lobby-client-any-url",
   "description": "Simple API for building games using WebSockets.",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "engines": {
     "node": ">=20.0"
   },
@@ -29,14 +29,13 @@
   ],
   "authors": [
     {
-      "name": "Scott Doxey",
-      "email": "hello@scottdoxey.com",
-      "homepage": "http://scottdoxey.com/"
+      "name": "Humort56",
+      "email": "humort56@gmail.com"
     }
   ],
-  "homepage": "https://github.com/neogeek/websocket-game-lobby-client",
+  "homepage": "https://github.com/Humort56/websocket-game-lobby-client-any-url",
   "repository": {
     "type": "git",
-    "url": "git://github.com/neogeek/websocket-game-lobby-client.git"
+    "url": "git://github.com/Humort56/websocket-game-lobby-client-any-url.git"
   }
 }
