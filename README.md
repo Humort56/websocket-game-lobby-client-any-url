@@ -32,6 +32,7 @@ document
 
 ```javascript
 const gameLobby = new WebSocketGameLobbyClient({
+    url = window.location.hostname,
     port = 80,
     options = {maxRetries: 10},
     gameId = null,
