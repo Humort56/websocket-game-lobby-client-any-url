@@ -1,19 +1,19 @@
-# websocket-game-lobby-client
+# websocket-game-lobby-client-any-url
 
 > 🔧 Simple API for building games using WebSockets.
 
-[![NPM Version](http://img.shields.io/npm/v/websocket-game-lobby-client.svg?style=flat)](https://www.npmjs.org/package/websocket-game-lobby-client)
+[![NPM Version](http://img.shields.io/npm/v/websocket-game-lobby-client-any-url.svg?style=flat)](https://www.npmjs.org/package/websocket-game-lobby-client-any-url)
 
 ## Install
 
 ```bash
-$ npm install websocket-game-lobby-client
+$ npm install websocket-game-lobby-client-any-url
 ```
 
 ## Example
 
 ```javascript
-import { WebSocketGameLobbyClient } from 'websocket-game-lobby-client';
+import { WebSocketGameLobbyClient } from 'websocket-game-lobby-client-any-url';
 
 const gameLobby = new WebSocketGameLobbyClient();
 
@@ -44,15 +44,15 @@ const gameLobby = new WebSocketGameLobbyClient({
 
 #### Options
 
-| Name                    | Description                                                                                                      | Default            |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------ |
-| `url`                   | URL to connect to WebSocket  server.                                                                             | `window.location.hostname` |
-| `port`                  | Port to connect to WebSocket server.                                                                             | `80`               |
-| `options`               | Options to send to [reconnecting-websocket](https://github.com/pladaria/reconnecting-websocket)                  | `{maxRetries: 10}` |
-| `gameId`                | Game ID used to connect to the [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby) server.   | `null`             |
-| `gameCode`              | Game Code used to connect to the [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby) server. | `null`             |
-| `playerId`              | Player ID used to connect to [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby) server.     | `null`             |
-| `keepAliveMilliseconds` | Interval at which to ping the [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby) server.    | `30000`            |
+| Name                    | Description                                                                                                              | Default                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------- |
+| `url`                   | URL to connect to WebSocket  server.                                                                                     | `window.location.hostname` |
+| `port`                  | Port to connect to WebSocket server.                                                                                     | `80`                       |
+| `options`               | Options to send to [reconnecting-websocket](https://github.com/pladaria/reconnecting-websocket)                          | `{maxRetries: 10}`         |
+| `gameId`                | Game ID used to connect to the [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby-any-url) server.   | `null`                     |
+| `gameCode`              | Game Code used to connect to the [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby-any-url) server. | `null`                     |
+| `playerId`              | Player ID used to connect to [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby-any-url) server.     | `null`                     |
+| `keepAliveMilliseconds` | Interval at which to ping the [websocket-game-lobby](https://github.com/neogeek/websocket-game-lobby-any-url) server.    | `30000`                    |
 
 ### WebSocketGameLobbyClient.addEventListener(type, callback)
 
